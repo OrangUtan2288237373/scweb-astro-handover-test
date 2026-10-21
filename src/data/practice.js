@@ -11,7 +11,7 @@ export const prices = { introductory: 59, ongoing: 75, deposit: 25 };
 export const hours = [
   { day: 'Mon–Thu', longDay: 'Monday–Thursday', time: '4–7pm' },
   { day: 'Friday', longDay: 'Friday', time: 'all day' },
-  { day: 'Saturday', longDay: 'Saturday', time: 'morning' },
+  { day: 'Saturday', longDay: 'Saturday', time: '1am–11pm' },
 ];
 export const navigation = [
   { href: '/', label: 'Home' },
