@@ -1,0 +1,23 @@
+.DS_Store
+.claude/
+.netlify/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+*.local
+node_modules/
+
+# Astro build output and local tooling
+dist/
+.astro/
+.codex/
+.agents/
+.wrangler/
+.vercel/
+coverage/
+playwright-report/
+test-results/
+*.log
