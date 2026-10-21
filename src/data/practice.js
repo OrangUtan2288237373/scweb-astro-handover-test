@@ -7,7 +7,7 @@ export const practice = {
   email: 'Demo email: hello@example.invalid (not monitored)',
   website: 'Demo website: local preview only',
 };
-export const prices = { introductory: 55, ongoing: 75, deposit: 25 };
+export const prices = { introductory: 59, ongoing: 75, deposit: 25 };
 export const hours = [
   { day: 'Mon–Thu', longDay: 'Monday–Thursday', time: '4–7pm' },
   { day: 'Friday', longDay: 'Friday', time: 'all day' },
