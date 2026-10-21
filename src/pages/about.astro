@@ -1,0 +1,57 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { practice, prices, hours } from '../data/practice.js';
+const description = `Bodywork Practice Demo: training content only. Samuel Morgan is a certified Grinberg Method practitioner and Bowen Technique therapist based in London, UK.`;
+---
+<SiteLayout title="About" description={description}>
+
+    <!-- =============================================
+         ABOUT — Split layout: portrait left, bio right
+         Portrait is contained, not full bleed
+         ============================================= -->
+    <section class="split-section about-split">
+
+      <div class="split-image-col about-portrait-col">
+        <img src="/images/portrait.jpg" alt="Samuel Morgan, bodywork therapist" style="object-position: center 15%;">
+      </div>
+
+      <div class="split-content-col about-bio-col">
+        <p class="demo-note">Practitioner biography copied for demonstration only.</p><span class="section-label">About</span>
+        <h1 style="font-size: clamp(2rem, 3.5vw, 3rem); font-style: italic; font-weight: 300; margin-bottom: 2rem;">Samuel Morgan</h1>
+        <p>I began training as a bodywork therapist in 2017, qualifying in the Bowen Technique in 2020 and the Grinberg Method&#x2122; in 2023. That journey was driven by my own first-hand experience of what bodywork can do &mdash; how it helped me become more grounded, less dominated by my thinking mind, and better equipped to navigate pain and emotional difficulty.</p>
+        <p>I bring sensitivity, curiosity and care to my work with clients. I listen deeply and try to meet each person where they actually are &mdash; not where I think they should be. My warmth and calmness are genuine; so is my commitment to doing work that actually helps.</p>
+        <p>I work from a clinic in London. Sessions are available {hours[0].longDay} {hours[0].time}, {hours[1].longDay} {hours[1].time}, and {hours[2].longDay} {hours[2].time}s.</p>
+        <p class="pull-line">&ldquo;The body is constantly communicating. My job is to help you hear it.&rdquo;</p>
+      </div>
+
+    </section>
+
+
+    <!-- =============================================
+         QUALIFICATIONS — Full width, tan
+         ============================================= -->
+    <section class="conditions-section bg-tan">
+      <div class="conditions-inner" style="text-align: left; max-width: 680px;">
+        <span class="section-label">Training &amp; qualifications</span>
+        <h2>Certified and practising since 2020.</h2>
+        <ul class="conditions-list" style="margin-top: 1rem;">
+          <li>Certified Grinberg Method&#x2122; Practitioner (qualified 2023)</li>
+          <li>Certified Bowen Therapist, BTPA (qualified 2020)</li>
+          <li>Training begun 2017</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         CTA
+         ============================================= -->
+    <section class="cta-section bg-sage">
+      <span class="section-label light centered">Ready to begin</span>
+      <h2>Book a session.</h2>
+      <p class="cta-body">Introductory session, £{prices.introductory} for 60 minutes. Sessions thereafter £{prices.ongoing}. Central London.</p>
+      <a href="/book/" class="btn btn-white">Book a Session</a>
+    </section>
+
+  
+</SiteLayout>

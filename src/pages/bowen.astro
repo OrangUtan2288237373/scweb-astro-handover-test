@@ -1,0 +1,86 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { practice, prices, hours } from '../data/practice.js';
+const description = `Bodywork Practice Demo: training content only. Learn about Bowen Technique sessions with Samuel Morgan in London, including what happens during an appointment.`;
+---
+<SiteLayout title="Bowen Technique" description={description}>
+
+    <!-- =============================================
+         HERO
+         ============================================= -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="/images/bowen-feet.jpg" alt="Samuel Morgan performing Bowen Technique on feet">
+      </div>
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="page-hero-content">
+        <span class="section-label light">Samuel Morgan</span>
+        <h1>The Bowen Technique</h1>
+        <p class="hero-sub">Gentle, precise bodywork without force.</p>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         WHAT IS IT — Full width, cream
+         ============================================= -->
+    <section class="conditions-section bg-cream">
+      <div class="conditions-inner" style="text-align: left; max-width: 680px;">
+        <span class="section-label">What is it?</span>
+        <h2>Gentle moves. Time to respond.</h2>
+        <p style="max-width: none; margin-bottom: 1.4rem;">Bowen uses a series of gentle, precise movements across muscles and soft tissue, applied with the fingers and thumbs. Short pauses between each set give you time to rest and notice how your body responds.</p>
+        <p style="max-width: none;">There is no manipulation or sustained pressure, and you remain clothed throughout. It is a quiet, unhurried form of bodywork that many people find deeply relaxing.</p>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         WHAT IT CAN HELP WITH — Sticky split, tan
+         ============================================= -->
+    <section class="split-section bg-tan">
+
+      <div class="split-image-col">
+        <img src="/images/neck-work.jpg" alt="Precise bodywork on the neck and shoulders">
+      </div>
+
+      <div class="split-content-col">
+        <span class="section-label">Why choose Bowen?</span>
+        <h2>A lighter approach to bodywork.</h2>
+        <p style="max-width: none; margin-bottom: 1.4rem;">Bowen may appeal if you:</p>
+        <ul class="conditions-list" style="margin-top: 0;">
+          <li>Prefer light-touch bodywork</li>
+          <li>Feel physically tense or overworked but do not want deep pressure</li>
+          <li>Want time to slow down and reconnect with your body</li>
+          <li>Are looking for a quieter alternative to conventional massage</li>
+          <li>Are curious about a gentle form of hands-on bodywork</li>
+        </ul>
+      </div>
+
+    </section>
+
+
+    <!-- =============================================
+         WHAT TO EXPECT — Full width, cream
+         ============================================= -->
+    <section class="conditions-section bg-cream">
+      <div class="conditions-inner" style="text-align: left; max-width: 680px;">
+        <span class="section-label">What to expect</span>
+        <h2>Calm, measured and unhurried.</h2>
+        <p style="max-width: none; margin-bottom: 1.4rem;">Sessions last 50&ndash;60 minutes. We begin with a brief conversation about what has brought you and what you would like from the session. The number and timing of any further sessions are discussed individually.</p>
+        <p style="max-width: none;">The work moves at a calm pace, with pauses between movements. Some people experience the session as deeply restful, although everyone responds differently.</p>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         CTA
+         ============================================= -->
+    <section class="cta-section bg-sage">
+      <span class="section-label light centered">Ready to begin</span>
+      <h2>Book a session.</h2>
+      <p class="cta-body">Introductory session, £{prices.introductory} for 60 minutes. Sessions thereafter £{prices.ongoing}. Central London.</p>
+      <a href="/book/" class="btn btn-white">Book a Session</a>
+    </section>
+
+  
+</SiteLayout>

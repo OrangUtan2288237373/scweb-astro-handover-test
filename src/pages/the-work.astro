@@ -1,0 +1,127 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { practice, prices, hours } from '../data/practice.js';
+const description = `Bodywork Practice Demo: training content only. The Grinberg Method is a body-based learning approach. Samuel Morgan works with clients in London, UK.`;
+---
+<SiteLayout title="The Grinberg Method" description={description}>
+
+    <!-- =============================================
+         HERO
+         ============================================= -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="/images/head-work.jpg" alt="Hands-on cranial bodywork session">
+      </div>
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="page-hero-content">
+        <span class="section-label light">Samuel Morgan</span>
+        <h1>The Grinberg Method&#x2122;</h1>
+        <p class="hero-sub">A body-based approach to lasting change</p>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         WHAT IS IT — Sticky split (image right)
+         ============================================= -->
+    <section class="split-section image-right bg-cream">
+
+      <div class="split-image-col">
+        <img src="/images/back-work.jpg" alt="Samuel Morgan working on a client's back">
+      </div>
+
+      <div class="split-content-col">
+        <span class="section-label">What is it?</span>
+        <h2>A learning process conducted through the body.</h2>
+        <p>The Grinberg Method is based on a simple but profound observation: that much of what limits us &mdash; physically and emotionally &mdash; lives not in our thinking, but in the body. In patterns of tension, resistance, and reaction that we repeat automatically, often without realising.</p>
+        <p>These patterns often begin as responses to past experiences &mdash; pain, fear, stress, difficulty. Over time they become fixed, running on autopilot, shaping how we interpret and respond to the present. People can find themselves walking in circles, wondering why the same things keep happening.</p>
+        <p>This work uses touch, breath, movement and attention to help you become aware of those patterns &mdash; and to learn, through direct physical experience, how to respond differently.</p>
+        <p>It is not treatment in the conventional sense. It is a learning process, conducted through the body.</p>
+      </div>
+
+    </section>
+
+
+    <!-- =============================================
+         WHAT MAKES IT DIFFERENT — Full width, tan
+         ============================================= -->
+    <section class="conditions-section bg-tan">
+      <div class="conditions-inner" style="text-align: left; max-width: 680px;">
+        <span class="section-label">More than massage. More than talking.</span>
+        <h2>A different kind of intervention.</h2>
+        <p style="max-width: none; margin-bottom: 1.4rem;">Unlike massage, this is not a passive experience. You are invited to feel, notice, breathe and respond. The learning that happens during the session is as important as any physical release.</p>
+        <p style="max-width: none;">Unlike talking therapy, the entry point is the body itself &mdash; sensation, tension, breath, movement &mdash; rather than narrative or analysis. The result is a kind of change that can feel surprisingly direct: less filtered through the thinking mind, more immediate.</p>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         WHAT IT CAN HELP WITH — Full width, cream
+         ============================================= -->
+    <section class="conditions-section bg-cream">
+      <div class="conditions-inner">
+        <span class="section-label centered">Who this is for</span>
+        <h2>This work may help<br>if you&rsquo;re experiencing:</h2>
+        <ul class="conditions-list">
+          <li>Chronic tension or recurring pain</li>
+          <li>Stress, anxiety or difficulty switching off</li>
+          <li>Emotional overwhelm or patterns that feel stuck</li>
+          <li>Difficulty relaxing, even when you want to</li>
+          <li>Feeling disconnected from your body or yourself</li>
+          <li>A sense that the same reactions keep running, whatever you try</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         WHAT TO EXPECT — Full width, tan
+         ============================================= -->
+    <section class="conditions-section bg-tan">
+      <div class="conditions-inner" style="text-align: left; max-width: 680px;">
+        <span class="section-label">What to expect</span>
+        <h2>Sessions are one-to-one and unhurried.</h2>
+        <p style="max-width: none; margin-bottom: 1.4rem;">Sessions last 50&ndash;60 minutes. We begin with a short conversation about what you&rsquo;re bringing &mdash; physically, emotionally, or both. The bodywork itself involves guided touch, breath and movement, with verbal guidance throughout.</p>
+        <p style="max-width: none;">Most people find the first session both unfamiliar and surprisingly straightforward. The work meets you where you are.</p>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         WORKING WITH INTENSITY — Full width, cream
+         ============================================= -->
+    <section class="conditions-section bg-cream">
+      <div class="conditions-inner" style="text-align: left; max-width: 680px;">
+        <span class="section-label">A note on intensity</span>
+        <h2>Working with intensity.</h2>
+        <p style="max-width: none; margin-bottom: 1.4rem;">Sessions sometimes involve moments of physical pressure or discomfort. This is intentional, but it is not about endurance.</p>
+        <p style="max-width: none; margin-bottom: 1.4rem;">Many of our habitual patterns &mdash; how we tense, brace, or disconnect &mdash; are ultimately responses to pain or fear, often from experiences long past. By working with discomfort consciously and with awareness, it becomes possible to observe those reactions and begin to respond differently.</p>
+        <p style="max-width: none;">The aim is never suffering. Intensity, when present, is always in service of learning.</p>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         TESTIMONIAL
+         ============================================= -->
+    <section class="testimonial-solo bg-tan">
+      <p class="demo-note">Testimonial copied for demonstration only.</p>
+      <blockquote>
+        &ldquo;I experienced a deep release which didn&rsquo;t make rational sense to my thinking mind, but left my body and being feeling lighter and clearer.&rdquo;
+      </blockquote>
+      <cite>&mdash; Client</cite>
+    </section>
+
+
+    <!-- =============================================
+         CTA
+         ============================================= -->
+    <section class="cta-section bg-sage">
+      <span class="section-label light centered">Ready to begin</span>
+      <h2>Book an introductory session.</h2>
+      <p class="cta-body">Introductory session, £{prices.introductory} for 60 minutes. Sessions thereafter £{prices.ongoing}. Central London.</p>
+      <a href="/book/" class="btn btn-white">Book a Session</a>
+    </section>
+
+  
+</SiteLayout>

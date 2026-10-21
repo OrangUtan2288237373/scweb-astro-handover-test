@@ -1,0 +1,13 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { practice, prices, hours } from '../data/practice.js';
+---
+<SiteLayout title="Demo message" compactFooter>
+    <section class="testimonial-solo" style="min-height: calc(100vh - var(--nav-height) - 200px); display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: calc(var(--nav-height) + 4rem);">
+      <span class="section-label centered">Thank you</span>
+      <blockquote style="font-size: clamp(1.5rem, 3vw, 2.2rem); max-width: 560px;">Demo only — your message has not been sent.</blockquote>
+      <cite style="margin-bottom: 3rem;">This demonstration does not arrange appointments or send enquiries.</cite>
+      <a href="/" class="btn" style="margin-top: 2rem;">Back to the site</a>
+    </section>
+  
+</SiteLayout>

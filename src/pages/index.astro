@@ -1,0 +1,110 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { practice, prices, hours } from '../data/practice.js';
+const description = `Bodywork Practice Demo: training content only. Bodywork sessions in London with Samuel Morgan, using the Grinberg Method and Bowen Technique.`;
+---
+<SiteLayout title="Home" description={description}>
+
+    <!-- =============================================
+         1. HERO
+         Full-bleed image, 40% dark overlay
+         ============================================= -->
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Samuel Morgan, bodywork therapist, in session"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1>Return to Your Body</h1>
+        <p class="hero-sub">Bodywork for stress, tension, pain and emotional holding &mdash; London</p>
+        <a href="/book/" class="btn btn-white">Book an introductory session</a>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         2. YOUR BODY KNOWS
+         Sticky split — image left, text right
+         ============================================= -->
+    <section class="split-section bg-tan">
+
+      <div class="split-image-col">
+        <img src="/images/consultation.jpg" alt="Samuel Morgan in a bodywork consultation">
+      </div>
+
+      <div class="split-content-col">
+        <span class="section-label">A different approach</span>
+        <h2>Your Body Knows.</h2>
+        <p>Many of us spend years repeating the same reactions — in how we hold tension, how we respond to stress, how we brace, push, or withdraw. Over time, the range of what feels possible begins to shrink.</p>
+        <p>Bodywork therapy can help you become aware of those patterns and learn, through the body, how to do something different — so you can live with greater ease, calm, and connection to yourself.</p>
+        <p class="pull-line">Less holding. More living.</p>
+      </div>
+
+    </section>
+
+
+    <!-- =============================================
+         3. THIS MAY HELP IF...
+         Full width, tan background, no image
+         ============================================= -->
+    <section class="conditions-section bg-cream">
+      <div class="conditions-inner">
+        <span class="section-label centered">Who this is for</span>
+        <h2 class="conditions-heading">This work may help<br>if you're dealing with:</h2>
+        <ul class="conditions-list">
+          <li>Chronic tension or recurring pain</li>
+          <li>Stress, anxiety or difficulty switching off</li>
+          <li>Emotional overwhelm or feeling stuck</li>
+          <li>Difficulty relaxing, even when you want to</li>
+          <li>Feeling disconnected from your body</li>
+          <li>A sense of walking in circles</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         4. NOT PASSIVE MASSAGE
+         Sticky split — image right, text left
+         ============================================= -->
+    <section class="split-section image-right bg-tan">
+
+      <div class="split-image-col">
+        <img src="/images/neck-work.jpg" alt="Samuel Morgan performing precise neck bodywork">
+      </div>
+
+      <div class="split-content-col">
+        <span class="section-label">The Grinberg Method</span>
+        <h2>This is not passive massage.</h2>
+        <p>More active than massage, and more body-based than talking therapy, the Grinberg Method is a guided process that helps you notice and change patterns held in the body &mdash; through touch, breath, movement and awareness.</p>
+        <p>Not something done to you. Something you learn.</p>
+        <a href="/the-work/" class="btn" style="margin-top: 2.5rem;">Learn more</a>
+      </div>
+
+    </section>
+
+
+    <!-- =============================================
+         5. TESTIMONIAL
+         Full width, cream, centred
+         ============================================= -->
+    <section class="testimonial-solo">
+      <p class="demo-note">Testimonial copied for demonstration only.</p>
+      <blockquote>
+        &ldquo;I experienced a deep release which didn&rsquo;t make rational sense to my thinking mind, but left my body and being feeling lighter and clearer.&rdquo;
+      </blockquote>
+      <cite>&mdash; Client</cite>
+    </section>
+
+
+    <!-- =============================================
+         6. CTA
+         Sage green background, white text
+         ============================================= -->
+    <section class="cta-section bg-sage">
+      <span class="section-label light centered">Ready to begin</span>
+      <h2>Ready to begin?</h2>
+      <p class="cta-body">Introductory session, £{prices.introductory} for 60 minutes. Sessions thereafter £{prices.ongoing}. Central London.</p>
+      <a href="/book/" class="btn btn-white">Book a Session</a>
+    </section>
+
+  
+</SiteLayout>

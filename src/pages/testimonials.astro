@@ -1,0 +1,122 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { practice, prices, hours } from '../data/practice.js';
+const description = `Bodywork Practice Demo: training content only. Hear from clients who have worked with Samuel Morgan using the Grinberg Method and Bowen Technique in London, UK.`;
+---
+<SiteLayout title="Testimonials" description={description}>
+
+    <!-- Page Header -->
+    <header class="page-header bg-tan">
+      <span class="section-label">What clients say</span>
+      <h1>Testimonials</h1><p class="demo-note">Testimonials copied from the original website for demonstration only; they are not reviews of this demo or Sam Clements Web.</p>
+    </header>
+
+
+    <!-- =============================================
+         SECTION 1 — VIDEO TESTIMONIALS
+         Tan background
+         ============================================= -->
+    <section class="video-testimonials bg-tan">
+      <div class="video-testimonials-inner">
+
+        <h2>Hear from clients</h2>
+
+        <!-- Video 1 -->
+        <div class="video-block">
+          <div class="video-wrapper">
+            <div class="video-consent">
+              <p class="video-consent-button">Demo video placeholder — playback disabled</p>
+            </div>
+          </div>
+          <p class="video-label"><em>Laura, Brighton</em></p>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-block">
+          <div class="video-wrapper">
+            <div class="video-consent">
+              <p class="video-consent-button">Demo video placeholder — playback disabled</p>
+            </div>
+          </div>
+          <p class="video-label"><em>Euan, London</em></p>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-block">
+          <div class="video-wrapper">
+            <div class="video-consent">
+              <p class="video-consent-button">Demo video placeholder — playback disabled</p>
+            </div>
+          </div>
+          <p class="video-label"><em>Robyn, Hove</em></p>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-block">
+          <div class="video-wrapper">
+            <div class="video-consent">
+              <p class="video-consent-button">Demo video placeholder — playback disabled</p>
+            </div>
+          </div>
+          <p class="video-label"><em>Craig, Hove</em></p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         SECTION 2 — WRITTEN TESTIMONIALS
+         Cream background
+         ============================================= -->
+    <section class="written-testimonials bg-cream">
+      <div class="written-testimonials-inner">
+
+        <h2>More from clients</h2>
+
+        <!-- Testimonial 1 -->
+        <div class="written-testimonial">
+          <p>&ldquo;I had never heard of The Grinberg Method until I met Sam, and he made me feel safe and seen throughout our session. Sam is strong and gentle at the same time, and sensitive not only with his touch but also with his presence. I experienced a deep release, which didn&rsquo;t make a lot of rational sense to my thinking mind, but left my body and my being feeling lighter and cleaner somehow. I would definitely have another session with Sam and have no hesitation in recommending him. If you&rsquo;re curious, go for it!&rdquo;</p>
+          <span class="attribution">Ola, Actress &mdash; London</span>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="written-testimonial">
+          <p>&ldquo;I&rsquo;ve benefited a lot from Samuel&rsquo;s therapy. In particular, he&rsquo;s helped me with connecting my body to my breath. One of the unexpected benefits I gained is that it helped me uncover unconscious beliefs and patterns that were holding me back. I also feel a sense of relief after leaving his sessions &mdash; physically and emotionally lighter &mdash; and would recommend him to anyone who is open to participating in a mixed approach to therapy.&rdquo;</p>
+          <span class="attribution">Robyn &mdash; Hove</span>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="written-testimonial">
+          <p>&ldquo;Samuel creates a respectful, compassionate and safe space, something that feels especially important when working with trauma. He has a real gift of being fully present during the sessions &mdash; insightful and tuned in, making observations about something quite subtle, sometimes before I&rsquo;m even aware of it myself. During our time together, I&rsquo;ve had some big insights into just how much past traumas are still being held in my body. Samuel&rsquo;s skill in working sensitively with trauma is evident. I wholeheartedly recommend Samuel for the Grinberg Method and have already recommended him to my friends.&rdquo;</p>
+          <span class="attribution">Jo &mdash; Brighton</span>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="written-testimonial">
+          <p>&ldquo;I would highly recommend Samuel to anyone experiencing stress or anxiety. Samuel is really kind and creates a calm and safe atmosphere. The sessions helped me to focus on my breathing and use my breath to calm nerves or anxiety. It helped me understand more deeply how we embody stress &mdash; and how, by focusing on the breath and the body, we can reduce the feeling of stress in the mind. I always left feeling stronger, calmer, and with more clarity of thought, and most of all, better at listening to my body.&rdquo;</p>
+          <span class="attribution">Maria &mdash; Hove</span>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="written-testimonial">
+          <p>&ldquo;Samuel is an exceptionally skilled and empathetic bodyworker. During our sessions, I felt safe and supported enough to share openly. His bodywork allowed me to experience a renewed flow of energy, helping to release stagnation and blockages. When I expressed my desire for a deeper sense of stillness, he adapted the session accordingly &mdash; his bodywork helped calm my nervous system and feel more anchored in my body. I wholeheartedly recommend Samuel.&rdquo;</p>
+          <span class="attribution">Brailla May, Designer</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         CTA
+         ============================================= -->
+    <section class="cta-section bg-sage">
+      <span class="section-label light centered">Ready to begin</span>
+      <h2>Ready to begin?</h2>
+      <p class="cta-body">Introductory session, £{prices.introductory} for 60 minutes. Sessions thereafter £{prices.ongoing}. Central London.</p>
+      <a href="/book/" class="btn btn-white">Book a Session</a>
+    </section>
+
+  
+</SiteLayout>

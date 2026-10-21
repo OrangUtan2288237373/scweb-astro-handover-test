@@ -1,0 +1,27 @@
+---
+import { practice, navigation } from '../data/practice.js';
+---
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label={`${practice.name} — Home`}>
+      {practice.name}
+      <span class="logo-sub">{practice.subtitle}</span>
+    </a>
+
+    <ul class="nav-links">
+      {navigation.map(({ href, label }) => <li class:list={{ 'nav-cta': href === '/book/' }}><a href={href} class:list={{ active: Astro.url.pathname === href }} aria-current={Astro.url.pathname === href ? 'page' : undefined}>{label}</a></li>)}
+    </ul>
+
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>{navigation.map(({ href, label }) => <li><a href={href}>{label}</a></li>)}</ul>
+  </div>
+
+  

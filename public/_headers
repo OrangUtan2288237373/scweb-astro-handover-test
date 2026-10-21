@@ -1,0 +1,3 @@
+# A3 configuration check: informational response header only.
+/privacy/
+  X-SCWeb-A3-Test: static-config-ok

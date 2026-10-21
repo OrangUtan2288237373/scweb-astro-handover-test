@@ -1,0 +1,19 @@
+{
+  "name": "scweb-bodywork-practice-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.22.0 <25"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "dev:stop": "astro dev stop",
+    "preview:stop": "astro preview stop"
+  },
+  "dependencies": {
+    "astro": "7.4.1"
+  }
+}

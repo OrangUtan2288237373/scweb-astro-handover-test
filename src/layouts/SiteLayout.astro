@@ -1,0 +1,17 @@
+---
+import Metadata from '../components/Metadata.astro';
+import TrainingBanner from '../components/TrainingBanner.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+const { title, description, compactFooter = false } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head><Metadata title={title} description={description} /><slot name="head" /></head>
+  <body>
+    <header class="demo-header"><TrainingBanner /><Navigation /></header>
+    <main><slot /></main>
+    <Footer compact={compactFooter} />
+    <script is:inline src="/js/main.js"></script>
+  </body>
+</html>

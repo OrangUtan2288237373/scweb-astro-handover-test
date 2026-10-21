@@ -1,0 +1,19 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { practice, prices, hours } from '../data/practice.js';
+const description = `About Bodywork Practice Demo, its disabled enquiry form and local training use.`;
+---
+<SiteLayout title="Privacy Notice" description={description}>
+    <section class="privacy-section bg-cream">
+      <div class="privacy-content">
+        <span class="section-label">Training demo</span><h1>About this demo and privacy</h1>
+        <p>Bodywork Practice Demo is a standalone training website for Sam Clements Web. Its imagery, practitioner biography, bodywork descriptions and labelled testimonials are copied demonstration content. No appointments, payments or enquiries can be made.</p>
+        <h2>The demonstration form</h2>
+        <p>Use made-up information only. The form does not send or save your entries: JavaScript displays a local demo message and prevents submission. Without JavaScript, the fields and button remain disabled. There is no form-processing service connected.</p>
+        <h2>Resources and browsing</h2>
+        <p>This site includes no analytics, tracking scripts or embedded video playback, and its code does not set cookies or use browser storage. Google Fonts is loaded for appearance, so your browser contacts Google to request fonts, sharing connection information such as your IP address. Your browser may cache site resources.</p>
+        <p>This copy is previewed locally. The local preview server may log page requests. Any future hosting will use a separate demo project; this notice must be reviewed if hosting or site behaviour changes.</p>
+      </div>
+    </section>
+  
+</SiteLayout>

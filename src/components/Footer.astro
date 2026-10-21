@@ -1,0 +1,36 @@
+---
+import { practice, hours, navigation } from '../data/practice.js';
+const { compact = false } = Astro.props;
+---
+{!compact && <footer class="site-footer" role="contentinfo">
+
+    <div>
+      <span class="footer-brand-name">{practice.name}</span>
+      <span class="footer-brand-sub">{practice.subtitle}</span>
+      <p class="footer-details">
+        {practice.location}<br>
+        <span>{practice.phone}</span><br>
+        <span>{practice.email}</span><br>
+        <span>{practice.website}</span>
+      </p>
+    </div>
+
+    <div>
+      <p class="footer-col-title">Pages</p>
+      <ul class="footer-links">{navigation.map(({ href, label }) => <li><a href={href}>{label}</a></li>)}</ul>
+    </div>
+
+    <div>
+      <p class="footer-col-title">Hours</p>
+      <p class="footer-details">
+        {hours.map(({ day, time }, index) => <Fragment>{day}: {time}{index < hours.length - 1 && <br />}</Fragment>)}
+      </p>
+    </div>
+
+  </footer>}
+
+  <div class="footer-bottom">
+    <p>{practice.name} &middot; Sam Clements Web</p>
+    <p>{!compact && <Fragment>{practice.location} &middot; </Fragment>} <a href="/privacy/">Privacy</a></p>
+  </div>
+

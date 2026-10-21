@@ -1,0 +1,2 @@
+# A3 configuration check: temporary, same-site redirect only.
+/a3-redirect-test/ /privacy/ 302
